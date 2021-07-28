@@ -59,7 +59,7 @@ Add incoming data to original dataset. Normalize the new dataset. Test the accur
 ## 9: Pipeline - Retrain Model
 Retrain the model with the new normalized dataset
 
-## 9: Pipeline - Deploy new Model
+## 10: Pipeline - Deploy new Model
 Operationalize the new model
 
 

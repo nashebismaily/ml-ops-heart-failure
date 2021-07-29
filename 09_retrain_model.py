@@ -13,6 +13,7 @@ HOST = "https://" + os.environ['CDSW_DOMAIN']
 USERNAME = "nismaily"
 API_KEY = "udy6l809q4ahd0tr907e0qudrwuuirt8"
 PROJECT_NAME = "ml-heart-failure"
+# Job ID for 10_push_new_model.py
 JOB_ID = "85"
 
 cml = CMLBootstrap(HOST, USERNAME, API_KEY, PROJECT_NAME)

@@ -35,7 +35,7 @@ ap = average_precision_score(y_test, predictions_rand)
 print(auroc, ap)
 
 # Save Model
-pickle.dump(randF, open("resources/ml_models/heart_failure_model_.pkl","wb"))
+pickle.dump(randF, open("resources/ml_models/heart_failure_model.pkl","wb"))
 
 
 

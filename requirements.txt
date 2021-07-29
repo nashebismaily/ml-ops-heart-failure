@@ -1,0 +1,7 @@
+pandas 
+sklearn 
+pandas 
+seaborn 
+lightgbm 
+pytz
+git+https://github.com/fastforwardlabs/cmlbootstrap#egg=cmlbootstrap

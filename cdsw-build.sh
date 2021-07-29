@@ -1,1 +1,1 @@
-pip3 install pandas sklearn pandas seaborn lightgbm git+https://github.com/fastforwardlabs/cmlbootstrap#egg=cmlbootstrap
+pip3 install pandas sklearn git+https://github.com/fastforwardlabs/cmlbootstrap#egg=cmlbootstrap

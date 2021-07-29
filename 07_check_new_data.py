@@ -27,7 +27,6 @@ if len(dir) == 0:
   print("No New Data")
 else:
   print("New Data Found")
-  
-## Start Model Testing Job
-job_status = cml.start_job(JOB_ID, start_job_params)
-print("Model Testing Job started")
+  ## Start Model Testing Job
+  job_status = cml.start_job(JOB_ID, start_job_params)
+  print("Model Testing Job started")

@@ -2,12 +2,8 @@ import pandas as pd
 import pickle
 from pyspark.sql import SparkSession
 from sklearn.preprocessing import MinMaxScaler
-import time
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-## Current Time
-timestr = time.strftime("%Y%m%d-%H%M%S")
 
 # Create Spark Session
 spark_app_name = "heart_failure_demo_nismaily"

@@ -6,8 +6,6 @@ import pandas as pd
 import random
 import pickle
 
-timestr = time.strftime("%Y%m%d-%H%M%S")
-
 heart_failure_data = pd.read_pickle("resources/normalized_data/heart_failure_normalized_dataframe.pkl",compression="gzip")
 
 # Data Modeling
@@ -37,7 +35,7 @@ ap = average_precision_score(y_test, predictions_rand)
 print(auroc, ap)
 
 # Save Model
-pickle.dump(randF, open("resources/ml_models/heart_failure_model_" + timestr + ".pkl","wb"))
+pickle.dump(randF, open("resources/ml_models/heart_failure_model_.pkl","wb"))
 
 
 

@@ -6,6 +6,7 @@ import os
 ## Determing Latest Model and Scalar Function from Timestamp
 list_of_models = sorted(filter( os.path.isfile,glob.glob("resources/ml_models/*")))
 latest_model = list_of_models[-1]
+
 list_of_scaler_functions = sorted(filter( os.path.isfile,glob.glob("resources/scaler_functions/*")))
 latest_scaler_function = list_of_scaler_functions[-1]
 

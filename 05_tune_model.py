@@ -14,13 +14,8 @@ import time
 timestr = time.strftime("%Y%m%d-%H%M%S")
 
 ## Get Latest Normalized Data Frame
-list_of_normalized_dataframe= glob.glob('resources/normalized_data/*')
-latest_normalized_dataframe = max(list_of_normalized_dataframe, key=os.path.getctime) 
-
-## Get Latest Model
-list_of_models= glob.glob('resources/ml_models/*')
-latest_model = max(list_of_models, key=os.path.getctime) 
-model = pickle.load(open(latest_model, 'rb'))
+list_of_normalized_dataframe= sorted(filter( os.path.isfile,glob.glob("resources/normalized_data/*")))
+latest_normalized_dataframe = list_of_normalized_dataframe[-1]
 
 ## Load Data
 heart_failure_data = pd.read_pickle(latest_normalized_dataframe,compression="gzip")
